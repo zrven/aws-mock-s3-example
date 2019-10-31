@@ -1,0 +1,39 @@
+{
+  "name": "aws-mock-s3-example",
+  "version": "1.0.0",
+  "description": "A demo api for mocking AWS services",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "node",
+    "graphql",
+    "neo4j",
+    "apollo",
+    "apollo",
+    "graphql",
+    "localstack",
+    "docker"
+  ],
+  "author": "Raghav",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.9.7",
+    "aws-sdk": "^2.553.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "graphql-upload": "^8.1.0",
+    "http": "0.0.0",
+    "multer": "^1.4.2"
+  }
+}

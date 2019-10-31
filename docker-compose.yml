@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  localstack:
+    image: localstack/localstack
+    container_name: localstack_service
+    ports:
+      - "4567-4584:4567-4584"
+      - "8055:8080"
+    environment:
+      - SERVICES=s3
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+    volumes:
+      - ./tmp/localstack:/tmp/localstack   
+      - /var/run/docker.sock:/var/run/docker.sock
+networks:
+  default:
+    name: mock_demo

@@ -1,7 +1,7 @@
 {
   "name": "aws-mock-s3-example",
   "version": "1.0.0",
-  "description": "A demo api for mocking AWS services",
+  "description": "A demo API for mocking AWS services",
   "main": "index.js",
   "scripts": {
     "test": "test"

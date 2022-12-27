@@ -6,7 +6,7 @@ const credentials = {
    secretAccessKey: process.env.AWS_SECRET_KEY,
 }
 
-const s3Server = process.env.AWS_S3_SERVER || 'http://localhost:4572';
+const s3Server = process.env.AWS_S3_SERVER || 'http://localhost:4566';
 const bucketName = process.env.AWS_BUCKET_NAME
 
 const s3client = new AWS.S3({
@@ -22,6 +22,7 @@ exports.uploadFile = (data, fileName) => {
      contentType = "image/" + extn;
    console.log(contentType);
    return new Promise((resolve, reject) => {
+      console.log(s3client)
       s3client.upload(
          {
             Bucket: bucketName,
